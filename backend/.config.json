@@ -1,0 +1,11 @@
+{
+  "app_name": "Guess the Score World Cup 1.0 API",
+  "http_server": {
+    "port": "5000"
+  },
+  "database": {
+    "username": "admin",
+    "password": "admin",
+    "database_name": "worldcup_portal"
+  }
+}

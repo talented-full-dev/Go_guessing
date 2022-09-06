@@ -1,0 +1,82 @@
+[
+  {
+    "match_id": {
+      "$oid": "60aabc4c9b05eaedd79e6c9c"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e7"
+    },
+    "teamA_score": "1",
+    "teamB_score": "2"
+  },
+  {
+    "match_id": {
+      "$oid": "60aabc4c9b05eaedd79e6c9d"
+    },
+    "user_id": {
+    "$oid": "60aabc419b05eaedd79e68e6"
+    },
+    "teamA_score": "2",
+    "teamB_score": "2"
+  },
+  {
+    "match_id": {
+      "$oid": "60aabc4c9b05eaedd79e6c9d"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e6"
+    },
+    "teamA_score": "1",
+    "teamB_score": "5"
+  },
+  {
+    "match_id": {
+      "$oid": "60aabc4c9b05eaedd79e6c9e"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e6"
+    },
+    "teamA_score": "0",
+    "teamB_score": "0"
+  },
+  {
+    "match_id": {
+      "$oid": "60aac0b69b05eaedd79fe6fe"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e9"
+    },
+    "teamA_score": "3",
+    "teamB_score": "2"
+  },
+  {
+    "match_id": {
+      "$oid": "60aac0b69b05eaedd79fe6fe"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e8"
+    },
+    "teamA_score": "3",
+    "teamB_score": "1"
+  },
+  {
+    "match_id": {
+      "$oid": "60aac0b69b05eaedd79fe6fe"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e8"
+    },
+    "teamA_score": "0",
+    "teamB_score": "0"
+  },
+  {
+    "match_id": {
+      "$oid": "60aabc4c9b05eaedd79e6ca0"
+    },
+    "user_id": {
+      "$oid": "60aabc419b05eaedd79e68e9"
+    },
+    "teamA_score": "0",
+    "teamB_score": "0"
+  }
+]

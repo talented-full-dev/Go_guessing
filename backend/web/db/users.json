@@ -1,0 +1,58 @@
+[
+  {
+    "email": "admin@admin.ru",
+    "username": "denddyprod",
+    "password_hash": "$2a$10$hJYjlPJikwbxiZJsp77aiOOFZSMtThF6hWz1rVBDnm0ex8jlSVBqa",
+    "access_rights": {
+      "read": true,
+      "write": true,
+      "edit": true
+    },
+    "uuid": "",
+    "created_at": 1621801773,
+    "is_active": true,
+    "score": 17
+  },
+  {
+    "email": "support@support.ro",
+    "username": "support",
+    "password_hash": "$2a$10$hJYjlPJikwbxiZJsp77aiOOFZSMtThF6hWz1rVBDnm0ex8jlSVBqa",
+    "access_rights": {
+      "read": true,
+      "write": true,
+      "edit": false
+    },
+    "uuid": "",
+    "created_at": 1621801773,
+    "is_active": true,
+    "score": 62
+  },
+  {
+    "email": "user@user.ro",
+    "username": "user",
+    "password_hash": "$2a$10$hJYjlPJikwbxiZJsp77aiOOFZSMtThF6hWz1rVBDnm0ex8jlSVBqa",
+    "access_rights": {
+      "read": true,
+      "write": false,
+      "edit": false
+    },
+    "uuid": "",
+    "created_at": 1621801773,
+    "is_active": true,
+    "score": 57
+  },
+  {
+    "email": "invingatorul@invingatorul.ro",
+    "username": "invingatorul",
+    "password_hash": "$2a$10$hJYjlPJikwbxiZJsp77aiOOFZSMtThF6hWz1rVBDnm0ex8jlSVBqa",
+    "access_rights": {
+      "read": true,
+      "write": false,
+      "edit": false
+    },
+    "uuid": "",
+    "created_at": 1621801773,
+    "is_active": true,
+    "score": 7
+  }
+]
