@@ -7,7 +7,7 @@ export default function Copyright() {
         <Typography variant="body2" color="textSecondary" align="center">
             {'© '}
             <Link color="inherit" href="/">
-                Guess the Score - World Cup  2022
+                Guess the Score - World Cup  {new Date().getFullYear}
       </Link>
       <Languages/>
         </Typography>
