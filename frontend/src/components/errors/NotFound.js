@@ -11,7 +11,6 @@ function NotFound() {
             <div className="fof">
                 <a href="/">
                     <h1>Error 404</h1>
-
                 </a>
                 <br/>
                 <h2>{t("page_not_found")}</h2>
