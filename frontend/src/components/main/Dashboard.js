@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import { CssBaseline, Grid, Container } from '@material-ui/core';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -41,14 +39,14 @@ export default function Dashboard() {
   ];
 
   useEffect(() => {
-    async function getAllMatches()  {
+    async function getAllMatches() {
       const results = await UserService.allMatches()
       setFeaturedPosts(results)
     }
     getAllMatches()
-  },[]);
+  }, []);
 
-  if(featuredPosts)
+  if (featuredPosts)
     return (
       <React.Fragment>
         <CssBaseline />
@@ -57,12 +55,12 @@ export default function Dashboard() {
           <main>
             <MainFeaturedPost post={mainFeaturedPost} />
             <Grid container justify="flex-end" className={classes.pad}>
-              <AddMatch featuredPosts={featuredPosts} setFeaturedPosts={setFeaturedPosts}/>
+              <AddMatch featuredPosts={featuredPosts} setFeaturedPosts={setFeaturedPosts} />
             </Grid>
 
             <Grid container spacing={4}>
               {featuredPosts.map((post) => (
-                <FeaturedPost key={post._id} post={post} featuredPosts={featuredPosts} setFeaturedPosts={setFeaturedPosts}/>
+                <FeaturedPost key={post._id} post={post} featuredPosts={featuredPosts} setFeaturedPosts={setFeaturedPosts} />
               ))}
             </Grid>
           </main>

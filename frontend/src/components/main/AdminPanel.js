@@ -1,7 +1,5 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import { CssBaseline, Grid, Container, } from '@material-ui/core';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import Footer from './Footer';
@@ -26,22 +24,22 @@ export default function LeaderboardPage() {
   };
   if (AuthService.canEdit() && AuthService.canWrite())
     return (
-        <React.Fragment>
+      <React.Fragment>
         <CssBaseline />
         <Container maxWidth="lg">
-            <Header title={t("header_title")} sections={sections} />
-            <main>
+          <Header title={t("header_title")} sections={sections} />
+          <main>
             <MainFeaturedPost post={mainFeaturedPost} />
             <Grid container>
-                <h3>{t("users_list")}</h3>
-                <Table />
-            
+              <h3>{t("users_list")}</h3>
+              <Table />
+
             </Grid>
-            </main>
+          </main>
         </Container>
         <Footer title="PW 2021" description={t("footer_desc")} />
-        </React.Fragment>
-        );
+      </React.Fragment>
+    );
   else
-      return <div>nothing</div>
+    return <div>nothing</div>
 }

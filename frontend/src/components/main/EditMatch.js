@@ -1,12 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import AuthService from "../../services/auth.service";
-import TextField from '@material-ui/core/TextField';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import { TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import UserService from "../../services/user.service";
 import { useTranslation } from "react-i18next";
 
@@ -61,8 +56,8 @@ export default function EditMatch(props) {
 
   return (
     <React.Fragment>
-      { AuthService.canWrite() && <Button color="primary" onClick={handleClickOpen}>{t("edit_button")}</Button>}
-      { AuthService.canWrite() && <Button color="secondary" onClick={deleteMatch}> {t("delete_button")} </Button>}
+      {AuthService.canWrite() && <Button color="primary" onClick={handleClickOpen}>{t("edit_button")}</Button>}
+      {AuthService.canWrite() && <Button color="secondary" onClick={deleteMatch}> {t("delete_button")} </Button>}
       <div>
 
         <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
@@ -120,10 +115,10 @@ export default function EditMatch(props) {
           <DialogActions>
             <Button onClick={handleClose} color="primary">
               {t("cancel")}
-          </Button>
+            </Button>
             <Button onClick={editMatch} color="primary">
               {t("edit")}
-          </Button>
+            </Button>
           </DialogActions>
         </Dialog>
       </div>

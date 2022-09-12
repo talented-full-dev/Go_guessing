@@ -1,12 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import AuthService from "../../services/auth.service";
-import TextField from '@material-ui/core/TextField';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import { TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import UserService from "../../services/user.service";
 import { useTranslation } from "react-i18next";
 
@@ -48,7 +43,7 @@ export default function AddMatch(props) {
           <DialogContent>
             <DialogContentText>
               {t("match_desc")}
-          </DialogContentText>
+            </DialogContentText>
             <TextField
               autoFocus
               margin="dense"
@@ -94,10 +89,10 @@ export default function AddMatch(props) {
           <DialogActions>
             <Button onClick={handleClose} color="primary">
               {t("cancel")}
-          </Button>
+            </Button>
             <Button onClick={addMatch} color="primary">
               {t("add")}
-          </Button>
+            </Button>
           </DialogActions>
         </Dialog>
       </div>
