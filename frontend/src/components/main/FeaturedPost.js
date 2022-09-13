@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Hidden from '@material-ui/core/Hidden';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
+import {
+  Typography,
+  Grid,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Hidden,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Button,
+  TextField,
+} from '@material-ui/core';
 import EditMatch from "./EditMatch";
 import { useTranslation } from "react-i18next";
 import AuthService from "../../services/auth.service";
@@ -86,8 +88,8 @@ export default function FeaturedPost(props) {
           </Hidden>
         </Card>
       </CardActionArea>
-      
-      <EditMatch post={props.post} featuredPosts={props.featuredPosts} setFeaturedPosts={props.setFeaturedPosts}/>
+
+      <EditMatch post={props.post} featuredPosts={props.featuredPosts} setFeaturedPosts={props.setFeaturedPosts} />
 
 
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" fullWidth="true" maxWidth="xs">
