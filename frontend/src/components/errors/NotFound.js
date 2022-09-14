@@ -1,22 +1,23 @@
 import React from 'react';
 import './notfound.css'
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 function NotFound() {
-  const { t } = useTranslation();
+    const {t} = useTranslation();
 
-  return (<div id="main">
-  
-  <div className="fof">
-  <a href="/">
-    <h1>Error 404</h1>
+    return (
+        <div id="main">
 
-  </a>
-    <br /><h2>{t("page_not_found")}</h2>
+            <div className="fof">
+                <a href="/">
+                    <h1>Error 404</h1>
+                </a>
+                <br/>
+                <h2>{t("page_not_found")}</h2>
 
-  </div>
-</div>
-)
+            </div>
+        </div>
+    )
 }
 
 export default NotFound;
