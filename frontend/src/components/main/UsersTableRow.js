@@ -13,10 +13,15 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import TextField from '@material-ui/core/TextField';
-import { Button, Radio, RadioGroup, FormControl } from '@material-ui/core';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormGroup from '@material-ui/core/FormGroup';
+import {
+    Button,
+    Radio,
+    RadioGroup,
+    FormControl,
+    FormControlLabel,
+    FormGroup,
+    FormLabel
+} from '@material-ui/core';
 import Checkbox from '@material-ui/core/Checkbox';
 
 
