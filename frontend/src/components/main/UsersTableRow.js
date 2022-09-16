@@ -1,7 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
 import UserService from "../../services/user.service";
 import AuthService from "../../services/auth.service";
 import { useTranslation } from "react-i18next";
@@ -19,7 +17,9 @@ import {
     DialogContent,
     DialogContentText,
     DialogTitle,
-    TextField
+    TextField,
+    TableCell,
+    TableRow
 } from '@material-ui/core';
 import Checkbox from '@material-ui/core/Checkbox';
 
