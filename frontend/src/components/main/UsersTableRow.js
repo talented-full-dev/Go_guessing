@@ -5,14 +5,7 @@ import TableRow from '@material-ui/core/TableRow';
 import UserService from "../../services/user.service";
 import AuthService from "../../services/auth.service";
 import { useTranslation } from "react-i18next";
-import DeleteIcon from '@material-ui/icons/Delete';
-import EditIcon from '@material-ui/icons/Edit';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import TextField from '@material-ui/core/TextField';
+import { DeleteIcon, EditIcon } from '@material-ui/icons';
 import {
     Button,
     Radio,
@@ -20,7 +13,13 @@ import {
     FormControl,
     FormControlLabel,
     FormGroup,
-    FormLabel
+    FormLabel,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogContentText,
+    DialogTitle,
+    TextField
 } from '@material-ui/core';
 import Checkbox from '@material-ui/core/Checkbox';
 
