@@ -13,11 +13,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
+import { Button, Radio, RadioGroup, FormControl } from '@material-ui/core';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -52,8 +49,8 @@ export default function UsersTableRow(props) {
         read: true,
         write: false,
         edit: false,
-      });
-    
+    });
+
     const handleChangeCheckbox = (event) => {
         setAccess({ ...access, [event.target.name]: event.target.checked });
     };
@@ -82,24 +79,24 @@ export default function UsersTableRow(props) {
         console.log()
 
         UserService.updateuser(props.row.id, email, username, {
-            "read":  a_read === "true" ? true : false ,
-            "write":  a_write === "true" ? true : false , 
+            "read": a_read === "true" ? true : false,
+            "write": a_write === "true" ? true : false,
             "edit": a_edit === "true" ? true : false
         },
-            active === "true" ? true : false, 
+            active === "true" ? true : false,
             parseInt(score))
         const newList = props.rows.map((item) => {
-          if (item.id === props.row.id) {
-            const updatedItem = {
-                id: props.row.id,
-                email: email,
-                username: username,
-                access: a_read+","+a_write+","+a_edit,
-                isActive: active,
-                score: score,
-            };
-            return updatedItem;
-          } return item;
+            if (item.id === props.row.id) {
+                const updatedItem = {
+                    id: props.row.id,
+                    email: email,
+                    username: username,
+                    access: a_read + "," + a_write + "," + a_edit,
+                    isActive: active,
+                    score: score,
+                };
+                return updatedItem;
+            } return item;
         });
 
         props.setRows(newList)
@@ -115,7 +112,7 @@ export default function UsersTableRow(props) {
     }
     const user = AuthService.getCurrentUser()
 
-return (<React.Fragment>
+    return (<React.Fragment>
         <StyledTableRow key={props.row.id}>
             <StyledTableCell component="th" scope="row">
                 {props.row.email}
@@ -147,7 +144,7 @@ return (<React.Fragment>
             <DialogTitle id="form-dialog-title">{t("update_title")} - {props.row.username}</DialogTitle>
             <DialogContent>
                 <DialogContentText>
-                {t("user_details_text")}
+                    {t("user_details_text")}
                 </DialogContentText>
                 <TextField
                     autoFocus
@@ -186,10 +183,10 @@ return (<React.Fragment>
                 <FormGroup row>
                     <FormControlLabel
                         control={<Checkbox checked={access.read} onChange={handleChangeCheckbox} color="primary" name="read" value={access.read}
-                        id="aread"
+                            id="aread"
                         />}
                         label="Read"
-                        
+
                     />
                     <FormControlLabel
                         control={
@@ -204,7 +201,7 @@ return (<React.Fragment>
                         }
                         label="Write"
                     />
-                     <FormControlLabel
+                    <FormControlLabel
                         control={
                             <Checkbox
                                 checked={access.edit}
@@ -217,14 +214,14 @@ return (<React.Fragment>
                         }
                         label="Edit"
                     />
-                    
+
                 </FormGroup>
                 <br />
                 <FormControl component="fieldset">
-                    <FormLabel component="legend">{t("is_active_text")}</FormLabel><br/>
+                    <FormLabel component="legend">{t("is_active_text")}</FormLabel><br />
                     <RadioGroup aria-label="isactive" name="uactive" value={isActive} onChange={handleChangeRadio}>
                         <FormControlLabel value="true" control={<Radio />} label="True" />
-                        <FormControlLabel value="false" control={<Radio color="primary"/>}  label="False" />
+                        <FormControlLabel value="false" control={<Radio color="primary" />} label="False" />
                     </RadioGroup>
                 </FormControl>
             </DialogContent>
